@@ -20,7 +20,9 @@ label {
 #c2,
 #h,
 #alfa,
-#beta {
+#beta,
+#area,
+#peri {
   position: fixed;
   left: 45%;
 }
@@ -38,18 +40,30 @@ label[for="h"] {
 }
 
 label[for="alfa"],
-label[for="beta"] {
+label[for="beta"],
+label[for="area"],
+label[for="peri"] {
   left: 62%;
 }
 
 label[for="alfa"] {
-  top: 21%;
+  top: 20%;
   color: #f00;
 }
 
 label[for="beta"] {
   top: 25%;
   color: #00f;
+}
+
+label[for="area"] {
+  top: 31%;
+  color: #433432;
+}
+
+label[for="peri"] {
+  top: 36%;
+  color: #232342;
 }
 
 label[for="h"] {
@@ -68,10 +82,22 @@ label[for="c2"] {
   left: 64%;
   top: 20%;
 }
+
 #beta {
   left: 64%;
   top: 25%;
 }
+
+#area {
+  left: 64%;
+  top: 30%;
+}
+
+#peri {
+  left: 64%;
+  top: 35%;
+}
+
 #warning {
   position: fixed;
   left: 37%;

@@ -209,12 +209,24 @@ const init = () => {
           }
         }
       }
-      inputs[3].value = c1 / h;
-      inputs[3].value = Math.acos(inputs[3].value);
-      inputs[3].value = (inputs[3].value * 180) / Math.PI;
-      inputs[4].value = c2 / h;
-      inputs[4].value = Math.acos(inputs[4].value);
-      inputs[4].value = (inputs[4].value * 180) / Math.PI;
+      iterator.call(inputs, input => {
+        if (input.id === "alfa") {
+          input.value = c1 / h;
+          input.value = Math.acos(input.value);
+          input.value = (input.value * 180) / Math.PI;
+        }
+        if (input.id === "beta") {
+          input.value = c2 / h;
+          input.value = Math.acos(input.value);
+          input.value = (input.value * 180) / Math.PI;
+        }
+        if (input.id === "area") {
+          input.value = (c1 * c2) / 2;
+        }
+        if (input.id === "peri") {
+          input.value = parseFloat(c1) + parseFloat(c2) + parseFloat(h);
+        }
+      });
     }
   };
 };
