@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>pitagoras</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <canvas
+      id="scene"
+      style="border:1px #000 solid;"
+      width="800"
+      height="500"
+    ></canvas>
+    <label for="c1">c1</label>
+    <input
+      type="text"
+      placeholder="C1"
+      style="width: 150px; height: 25px;"
+      id="c1"
+    />
+    <label for="c2">c2</label>
+    <input
+      type="text"
+      placeholder="C2"
+      style="width: 150px; height: 25px;"
+      id="c2"
+    />
+    <label for="h">h</label>
+    <input
+      type="text"
+      placeholder="h"
+      style="width: 150px; height: 25px;"
+      id="h"
+    />
+    <label for="alfa">α</label>
+    <input
+      type="text"
+      placeholder="α"
+      style="width: 150px; height: 25px;"
+      id="alfa"
+      maxlength="0"
+    />
+    <label for="beta">β</label>
+    <input
+      type="text"
+      placeholder="β"
+      style="width: 150px; height: 25px;"
+      id="beta"
+      maxlength="0"
+    />
+    <p id="warning">presione la tecla enter para ver el resultado</p>
+    <script type="text/javascript">
+      window.addEventListener("load", () => {
+        init();
+      });
+    </script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

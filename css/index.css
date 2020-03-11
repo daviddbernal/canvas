@@ -1,0 +1,80 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+#scene {
+  position: fixed;
+  overflow: hidden;
+}
+label {
+  position: fixed;
+  left: 43%;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#c1,
+#c2,
+#h,
+#alfa,
+#beta {
+  position: fixed;
+  left: 45%;
+}
+#c1,
+label[for="c1"] {
+  top: 20%;
+}
+#c2,
+label[for="c2"] {
+  top: 25%;
+}
+#h,
+label[for="h"] {
+  top: 30%;
+}
+
+label[for="alfa"],
+label[for="beta"] {
+  left: 62%;
+}
+
+label[for="alfa"] {
+  top: 21%;
+  color: #f00;
+}
+
+label[for="beta"] {
+  top: 25%;
+  color: #00f;
+}
+
+label[for="h"] {
+  color: green;
+}
+
+label[for="c1"] {
+  color: red;
+}
+
+label[for="c2"] {
+  color: blue;
+}
+
+#alfa {
+  left: 64%;
+  top: 20%;
+}
+#beta {
+  left: 64%;
+  top: 25%;
+}
+#warning {
+  position: fixed;
+  left: 37%;
+  top: 5%;
+  font-size: 20px;
+}
